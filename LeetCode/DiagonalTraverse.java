@@ -32,10 +32,10 @@ public class DiagonalTraverse {
      public static int[] findDiagonalOrder(int[][] mat) {
 
         int rows = mat.length;
-        int cols = mat[0].length;
+        int columns = mat[0].length;
 
         // Answer array
-        int[] result = new int[rows * cols];
+        int[] result = new int[rows * columns];
 
         // Starting 
         int i = 0;
@@ -45,7 +45,7 @@ public class DiagonalTraverse {
 
         int direction = 1;
 
-        for (int k = 0; k < rows * cols; k++) {
+        for (int k = 0; k < rows * columns; k++) {
 
             result[k] = mat[i][j];
 
@@ -53,7 +53,7 @@ public class DiagonalTraverse {
             if (direction == 1) {
 
                 //  at the right boundary
-                if (j == cols - 1) {
+                if (j == columns - 1) {
                     i++;
                     direction = -1;
                 }
