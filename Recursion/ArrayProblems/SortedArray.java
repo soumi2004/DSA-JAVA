@@ -24,7 +24,7 @@ public class SortedArray {
     }
 
     static boolean sorted(int[] arr, int index){
-        // base condition
+        // base-condition
         if(index == arr.length-1){
             return  true;
         }
